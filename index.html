@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Credits for breathing css animation: -->
+  <!-- https://vmar76.medium.com/using-css-animations-to-visualize-breathing-techniques-7a20ee0aed5a  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Script to reveal text -->
+  <script src="main.js"></script>
+  <title>
+    Peace
+  </title>
+</head>
+<body class="grid place-items-center text-center h-screen w-screen bg-blue-300">
+
+  <h1 class="anim-circle mt-25 text-3xl font-bold bg-gradient-to-r from-blue-400 to-indigo-100 text-blue-900 h-48 w-48 p-5 block rounded-full flex items-center" id="prompt">
+   What do you want to do?
+  </h1>
+
+  <p>Take 10 seconds to breathe...</p>
+
+  <h1 class="text-3xl font-bold opacity-0 transition-opacity ease-in-out duration-[5s]" id="question">
+    Are you sure you want to visit <span class="font-bold capitalize" id="site-name"></span>?
+  </h1>
+
+</body>
+</html>
